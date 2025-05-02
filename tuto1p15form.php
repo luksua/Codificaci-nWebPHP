@@ -7,7 +7,6 @@
 </head>
 <body>
     <h1>Solución punto 14</h1>
-    <form action="tuto1p14.php" method="post">
     <!-- Ingrese su nombre:
         <input type="text" name="nombre">
         <br>
