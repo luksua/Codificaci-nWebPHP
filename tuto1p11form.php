@@ -36,7 +36,7 @@
         <br>
         <input type="checkbox" name="check4">Voley
         <br><br>
-        <input type="submit" name="Aceptar">
+        <input type="submit" value="Aceptar">
     </form>
 </body>
 </html>

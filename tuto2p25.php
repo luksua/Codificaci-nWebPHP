@@ -9,7 +9,7 @@
     <h1>Solución punto 25</h1>
     <?php
         $conexion=mysqli_connect("localhost","root","","base1") or die("Problemas con la conexión");
-        mysqli_query($conexion, "update cursos set nombrecurso='$_REQUEST[cursonuevo]' where nombrecurso='$_REQUEST[cursoviejo]'") or die("Problemas en el select: ".mysqli_error($conexion));
+        mysqli_query($conexion, "UPDATE cursos set nombrecurso='$_REQUEST[cursonuevo]' where nombrecurso='$_REQUEST[cursoviejo]'") or die("Problemas en el select: ".mysqli_error($conexion));
         echo "El nombre del curso fue modificado con exito";
     ?>
 </body>

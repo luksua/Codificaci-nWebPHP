@@ -6,21 +6,21 @@
     <title>Punto 29</title>
 </head>
 <body>
+    <h1>Solución punto 29</h1>
     <?php
         $conexion=mysqli_connect("localhost","root","","base1") or die("Problemas con la conexión");
-        $registros=mysqli_query($conexion,"select * from alumnos where codigo=$_REQUEST[codigo]") or
+        $registros=mysqli_query($conexion,"SELECT * from alumnos where codigo=$_REQUEST[codigo]") or
         die("Problemas en el select:".mysqli_error($conexion));
         if ($regalu=mysqli_fetch_array($registros))
         {
     ?>
             <form action="tuto2p29.php" method="post">
                 Ingrese el nuevo nombre del alumno: 
-                <input type="text" name="nuevonombre" value="<?php echo $reg['nombre'] ?>">
-                <input type="hidden" name="viejonombre" value="<?php echo $reg['nombre'] ?>"> <br>
+                <input type="text" name="nuevonombre" value="<?php echo $regalu['nombre'] ?>">
+                <input type="hidden" name="viejonombre" value="<?php echo $regalu['nombre'] ?>"><br>
                 Ingrese el nuevo mail del alumno: 
-                <input type="text" name="mailnuevo" value="<?php echo $reg['mail'] ?>">
-                <input type="hidden" name="mailviejo" value="<?php echo $regalu['mail'] ?>">
-                <br>
+                <input type="text" name="mailnuevo" value="<?php echo $regalu['mail'] ?>">
+                <input type="hidden" name="mailviejo" value="<?php echo $regalu['mail'] ?>"><br>
                 Seleccione el nuevo curso: 
                 <select name="codigocurso">
                     <?php

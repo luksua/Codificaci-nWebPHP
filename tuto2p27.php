@@ -10,7 +10,7 @@
     <?php
         $conexion=mysqli_connect("localhost","root","","base1") or
         die("Problemas con la conexión");
-        $registros=mysqli_query($conexion,"select alu.codigo as codigo,
+        $registros=mysqli_query($conexion,"SELECT alu.codigo as codigo,
         nombre, mail, codigocurso, nombrecurso from alumnos as alu
         inner join cursos as cur 
         on cur.codigo = alu.codigocurso

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punto 12</title>
+    <title>Punto 13</title>
 </head>
     <body>
-        <h1>Solución punto 12</h1>
+        <h1>Solución punto 13</h1>
     <!-- ejemplo
     <form action="pagina2.php" method="post">
         Ingrese nombre:<input type="text" name="nombre"><br>
@@ -16,7 +16,7 @@
         <input type="submit" value="Confirmar">
     </form> -->
 
-    <form action="tuto1p12.php" method="post">
+    <form action="tuto1p13.php" method="post">
         Ingrese nombre: 
         <input type="text" name="nombre"><br>
         Ingrese su curriculum:

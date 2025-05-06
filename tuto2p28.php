@@ -9,7 +9,7 @@
     <h1>Solución punto 28</h1>
     <?php
         $conexion=mysqli_connect("localhost","root","","base1") or die("Problemas con la conexión");
-        $registros = mysqli_query($conexion, "select nombrecurso from cursos") or die("Problemas en el select:".mysqli_error($conexion));
+        $registros = mysqli_query($conexion, "SELECT nombrecurso from cursos") or die("Problemas en el select:".mysqli_error($conexion));
         echo "Cursos inscritos: <br>";
         $a = 1;
         while ($reg = mysqli_fetch_array($registros)) 

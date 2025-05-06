@@ -15,7 +15,7 @@
         Seleccione el curso:
         <?php
             $conexion=mysqli_connect("localhost","root","","base1") or die("Problemas con la conexión");
-            $registros=mysqli_query($conexion,"select codigo, nombrecurso from cursos") or die("Problemas en el select: ".mysqli_error($conexion));
+            $registros=mysqli_query($conexion,"SELECT codigo, nombrecurso from cursos") or die("Problemas en el select: ".mysqli_error($conexion));
             while ($reg=mysqli_fetch_array($registros))
             {
                 echo "<input type='radio' name='codigocurso' value='$reg[codigo]'>$reg[nombrecurso]";

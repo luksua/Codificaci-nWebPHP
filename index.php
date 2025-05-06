@@ -16,11 +16,11 @@
     <a href="tuto1p9form.php">Punto 9</a><br>
     <a href="tuto1p10form.php">Punto 10</a><br>
     <a href="tuto1p11form.php">Punto 11</a><br>
-    <a href="tuto1p12form.php">Punto 13</a><br>
-    <a href="tuto1p13.php">Punto 14</a><br>
-    <a href="tuto1p14form.php">Punto 15</a><br>
-    <a href="tuto1p15.php">Punto 16</a><br>
-    <a href="tuto1p16.php">Punto 17</a><br>
+    <a href="tuto1p13form.php">Punto 13</a><br>
+    <a href="tuto1p14.php">Punto 14</a><br>
+    <a href="tuto1p15form.php">Punto 15</a><br>
+    <a href="tuto1p16.php">Punto 16</a><br>
+    <a href="tuto1p17.php">Punto 17</a><br>
     <a href="tuto2p18form.php">Punto 18</a><br>
     <a href="tuto2p20form.php">Punto 20</a><br>
     <a href="tuto2p21.php">Punto 21</a><br>
@@ -32,5 +32,7 @@
     <a href="tuto2p27form.php">Punto 27</a><br>
     <a href="tuto2p28.php">Punto 28</a><br>
     <a href="tuto2p29form1.php">Punto 29</a><br>
+    <a href="tuto2p30.php">Punto 30</a><br>
+    <a href="tuto2p31form.php">Punto 31</a><br>
 </body>
 </html>

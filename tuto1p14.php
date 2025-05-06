@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punto 13</title>
+    <title>Punto 14</title>
 </head>
 <body>
-    <h1>Solución punto 13</h1>
+    <h1>Solución punto 14</h1>
     <?php
         // vectores asociativos
         $semana[] = "Lunes";

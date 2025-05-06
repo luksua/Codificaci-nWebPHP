@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punto 14</title>
+    <title>Punto 15</title>
 </head>
 <body>
-    <h1>Solución punto 14</h1>
+    <h1>Solución punto 15</h1>
     <?php
         // ejemplo
         // $ar=fopen("datos.txt","a") or
