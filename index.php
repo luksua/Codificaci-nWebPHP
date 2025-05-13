@@ -49,5 +49,10 @@
     <a href="tuto3p39form.php">Punto 39</a><br>
     <a href="tuto3p40.php">Punto 40</a><br>
     <a href="tuto3p41form1.php">Punto 41</a><br>
+    <a href="tuto3p42form1.php">Punto 42</a><br>
+    <a href="tuto3p43form.php">Punto 43</a><br>
+    <a href="tuto3p44form1.php">Punto 44</a><br>
+    <a href="tuto3p45form.php">Punto 45</a><br>
+    <a href="tuto3p46.php">Punto 46</a><br>
 </body>
 </html>

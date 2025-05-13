@@ -10,17 +10,20 @@
     <?php
         $fecha = date("d/m/y");
         $hora = date("h:i:s");
-        $ar=fopen("datos.txt","a") or die("Problemas en la creacion");
-        fputs($ar,$_REQUEST['nombre']);
-        fputs($archivo, "\n");
-        fputs($archivo,"La queja fue realizada a las $hora del día $fecha: ");
-        fputs($archivo, "\n");
-        fputs($ar,$_REQUEST['queja']);
+        $ar=fopen("quejas.txt","a") or die("Problemas en la creacion");
+        fputs($ar,"Queja hecha por: $_REQUEST[nombre]");
+        fputs($ar, "\n");
+        fputs($ar,"La queja fue realizada a las $hora del día $fecha: ");
+        fputs($ar, "\n");
+        fputs($ar,"'$_REQUEST[queja]'");
         fputs($ar,"\n");
         fputs($ar,"--------------------------------------------------------");
         fputs($ar,"\n");
         fclose($ar);
         echo "Los datos se cargaron correctamente.";
+
+        header("Location: tuto3p42form1.php?success=1");
+        exit;
     ?>
 </body>
 </html>    

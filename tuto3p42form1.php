@@ -7,14 +7,20 @@
 </head>
 <body>
     <h1>Solución punto 42</h1>
-    <form action="tuto3p42.php" method="post">
+    <?php
+        if (isset($_GET['success']) && $_GET['success'] == 1) {
+            echo "<p style='color: green;'>La queja se ha registrado correctamente.</p>";
+        }
+    ?>
+    <form action="tuto3p42form2.php" method="post">
         Ingrese su nombre:
         <input type="text" name="nombre"><br><br>
         Ingrese la queja:
         <textarea name="queja" rows="7" cols="100"></textarea> <br>
-        <br><br>
-        <input type="submit" value="Verificar">
+        <br>
+        <input type="submit" value="Enviar">
     </form>
-    <a href="tuto3p42form2.php">Ver quejas registradas</a>
+    <br>
+    <a href="tuto3p42.php">Ver quejas registradas</a>
 </body>
 </html>    

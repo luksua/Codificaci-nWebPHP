@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 03-05-2025 a las 00:41:11
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.0.30
+-- Host: 127.0.0.1
+-- Generation Time: May 13, 2025 at 05:26 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,41 +18,41 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `base1`
+-- Database: `base1`
 --
-CREATE DATABASE IF NOT EXISTS `base1` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `base1`;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `alumnos`
+-- Table structure for table `alumnos`
 --
 
 CREATE TABLE `alumnos` (
   `codigo` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `mail` varchar(70) NOT NULL,
-  `codigocurso` int(11) NOT NULL
+  `codigocurso` int(11) NOT NULL,
+  `fechanac` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `alumnos`
+-- Dumping data for table `alumnos`
 --
 
-INSERT INTO `alumnos` (`codigo`, `nombre`, `mail`, `codigocurso`) VALUES
-(1, 'Luna', 'luna@gmail.com', 3),
-(2, 'Wendy', 'wendygarcia@gmail.com', 3),
-(3, 'Wendy', 'wendy@gmail.com', 2),
-(7, 'Danna', 'danna@gmail.com', 1),
-(8, 'Felipe', 'tomaz@gmail.com', 3),
-(9, 'Danna', 'danna@gmail.com', 1),
-(10, 'Angel', 'kirali@gmail.com', 2);
+INSERT INTO `alumnos` (`codigo`, `nombre`, `mail`, `codigocurso`, `fechanac`) VALUES
+(1, 'Luna', 'luna@gmail.com', 3, '2025-05-12'),
+(2, 'Wendy', 'wendygarcia@gmail.com', 3, '2025-05-12'),
+(3, 'Wendy', 'wendy@gmail.com', 2, '2025-05-12'),
+(7, 'Danna', 'danna@gmail.com', 1, '2025-05-12'),
+(8, 'Felipe', 'tomaz@gmail.com', 3, '2025-05-12'),
+(9, 'Danna', 'danna@gmail.com', 1, '2025-05-12'),
+(10, 'Angel', 'kirali@gmail.com', 2, '2025-05-12'),
+(11, 'Tomas', 'tomas@gmail.com', 3, '2010-12-19');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `cursos`
+-- Table structure for table `cursos`
 --
 
 CREATE TABLE `cursos` (
@@ -61,7 +61,7 @@ CREATE TABLE `cursos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `cursos`
+-- Dumping data for table `cursos`
 --
 
 INSERT INTO `cursos` (`codigo`, `nombrecurso`) VALUES
@@ -70,43 +70,43 @@ INSERT INTO `cursos` (`codigo`, `nombrecurso`) VALUES
 (3, 'JSP');
 
 --
--- Índices para tablas volcadas
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `alumnos`
+-- Indexes for table `alumnos`
 --
 ALTER TABLE `alumnos`
   ADD PRIMARY KEY (`codigo`);
 
 --
--- Indices de la tabla `cursos`
+-- Indexes for table `cursos`
 --
 ALTER TABLE `cursos`
   ADD PRIMARY KEY (`codigo`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `alumnos`
+-- AUTO_INCREMENT for table `alumnos`
 --
 ALTER TABLE `alumnos`
-  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT de la tabla `cursos`
+-- AUTO_INCREMENT for table `cursos`
 --
 ALTER TABLE `cursos`
   MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- Restricciones para tablas volcadas
+-- Constraints for dumped tables
 --
 
 --
--- Filtros para la tabla `alumnos`
+-- Constraints for table `alumnos`
 --
 ALTER TABLE `alumnos`
   ADD CONSTRAINT `fk_codigocurso` FOREIGN KEY (`codigocurso`) REFERENCES `cursos` (`codigo`);
